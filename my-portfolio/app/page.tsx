@@ -5,7 +5,6 @@ import TabOne from './components/tabs'
 export default function Home() {
   return (
     <main>
-      
       <TabOne />
     </main>
     

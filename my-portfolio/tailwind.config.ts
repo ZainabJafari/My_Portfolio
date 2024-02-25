@@ -32,7 +32,7 @@ module.exports = {
       "gray-3": "#FAFAFA",
       whiten: "#F1F5F9",
       whiter: "#F5F7FD",
-      boxdark: "#24303F",
+      boxdark: "#13112D",
       "boxdark-2": "#1A222C",
       strokedark: "#2E3A47",
       "form-strokedark": "#3d4d60",

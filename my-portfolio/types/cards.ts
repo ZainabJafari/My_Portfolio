@@ -6,4 +6,5 @@ export type CardItemProps = {
     cardTitle?: string;
     cardContent?: string;
     projectUrl?: string;
+    icon?: string[];
 };
