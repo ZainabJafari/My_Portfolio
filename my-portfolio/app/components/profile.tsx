@@ -14,25 +14,25 @@ const Profile = () => {
               Zainab Jafari
             </h1>
             <p className="text-lg leading-loose">
-              An ambitious and dedicated front-end developer student at KYH.
-              Currently actively seeking opportunities to enhance my skills and
-              contribute to exciting projects. Graduating soon and eager to
-              start a career in web development.
+              I am an ambitious and dedicated front-end developer student at
+              KYH. I'm currently seeking opportunities to enhance my skills and
+              contribute to exciting projects. I'm graduating soon and eager to
+              start a career in web development. 
             </p>
           </div>
           <div className="w-1/2 flex justify-center">
             <div className="relative sm:h-80 sm:w-80">
-                <Image
-                  src={"/images/Photo.jpg"}
-                  width={900}
-                  height={900}
-                  alt="profile"
-                  className="rounded-full"
-                />
-              </div>
+              <Image
+                src={"/images/Photo.jpg"}
+                width={900}
+                height={900}
+                alt="profile"
+                className="rounded-full"
+              />
             </div>
           </div>
         </div>
+      </div>
     </>
   );
 };
