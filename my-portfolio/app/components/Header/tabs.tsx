@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import Cards from "./cards";
-import Experience from "./skills";
-import Profile from "./profile";
+import Cards from "../Projects/cards";
+import Experience from "../experience/skills";
+import Profile from "../profile";
 import Navbar from "./navbar";
-import Contact from "./contactMe";
+import Contact from "../contactMe";
 
 const TabOne: React.FC = () => {
   const [openTab, setOpenTab] = useState(1);

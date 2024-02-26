@@ -1,4 +1,4 @@
-import { BRAND } from "../../types/brands";
+import { BRAND } from "../../../types/brands";
 import Image from "next/image";
 import Experience from "./experience";
 
@@ -45,7 +45,7 @@ const brandData: BRAND[] = [
   },
   {
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-    name: "MongoDB",
+    name: "Postman",
   },
 ];
 

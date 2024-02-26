@@ -20,7 +20,7 @@ const CardsItemTwo: React.FC<CardItemProps> = ({
             <Image width={300} height={128} src={cardImageSrc} alt="Cards" />
           ) : null}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 text-white">
-          <p>{cardContent}</p>
+          <p className="font-bold p-3">{cardContent}</p>
           </div>
         </div>
       <div className="p-2">

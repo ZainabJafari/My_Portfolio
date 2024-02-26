@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import Profile from './components/profile'
-import TabOne from './components/tabs'
+import TabOne from "./components/Header/tabs";
 
 export default function Home() {
   return (
     <main>
       <TabOne />
     </main>
-    
-  )
+  );
 }
