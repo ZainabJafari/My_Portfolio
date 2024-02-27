@@ -13,7 +13,7 @@ const TabOne: React.FC = () => {
   const inactiveClasses = "bg-gray dark:bg-meta-4 text-black dark:text-white";
 
   return (
-    <div className="pl-14 dark:border-strokedark dark:bg-boxdark">
+    <div className="pl-14 dark:border-strokedark dark:bg-boxdark min-h-screen">
       <div className="mb-7.5 flex flex-wrap gap-6 rounded-lg py-8 px-10 dark:border-strokedark items-center justify-between">
         <div>
           <Navbar />

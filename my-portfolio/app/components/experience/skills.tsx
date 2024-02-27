@@ -51,8 +51,8 @@ const brandData: BRAND[] = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="h-screen">
-      <div className="grid grid-cols-1 sm:grid-cols-2 pt-10 place-items-center">
+    <div>
+      <div className="h-full flex justify-around lg:flex-row sm:flex-col pt-10 md:flex-row">
         <div className="grid grid-cols-2 sm:grid-cols-3 bg-[#4238d3] dark:bg-[#F58A51] h-full p-20 rounded-tl-[80px] rounded-br-[80px]">
           {brandData.map((brand, key) => (
             <div
@@ -72,7 +72,7 @@ const Skills: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="sm:col-span-1">
+        <div className="">
           <Experience />
         </div>
       </div>
