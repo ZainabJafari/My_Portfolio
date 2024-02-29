@@ -1,12 +1,9 @@
-/* @/app/styles/globals.css */
-
-/* ToDo: use only the fonts needed */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .hover:bg-violet-600:hover {
-  background-color: #6B46C1; /* Ersätt med din önskade hover-färg */
+  background-color: #6B46C1;
 }
 @layer base {
   body {

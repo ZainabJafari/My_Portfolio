@@ -1,7 +1,6 @@
-import CardsItemTwo from "./cardItems";
+import CardsItems from "./cardItems";
 
-const cardsItemTwoData = [
-  
+const cardsItemsData = [
   {
     cardImageSrc: "/images/projec.png",
     cardTitle: " Cabin Rentals",
@@ -13,9 +12,10 @@ const cardsItemTwoData = [
     ],
   },
   {
-    cardImageSrc: "",
-    cardTitle: "Content Management System",
-    projectUrl: "https://github.com/ZainabJafari/CMS-project",
+    cardImageSrc: "/images/project5.png",
+    cardTitle: "Task Kanban",
+    projectUrl: "/images/project5.png",
+    cardContent: "Development in progress",
     icon: [
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" ,
      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
@@ -61,14 +61,14 @@ const Cards: React.FC = () => {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 place-items-center">
-        {cardsItemTwoData.map((card, key) => (
-          <CardsItemTwo
+        {cardsItemsData.map((card, key) => (
+          <CardsItems
             key={key}
             cardImageSrc={card.cardImageSrc}
             cardTitle={card.cardTitle}
             cardContent={card.cardContent}
             projectUrl={card.projectUrl}
-            icon={Array.isArray(card.icon) ? card.icon : [card.icon]} // Konvertera en sträng till en array med en sträng om det behövs
+            icon={Array.isArray(card.icon) ? card.icon : [card.icon]}
           />
         ))}
       </div>

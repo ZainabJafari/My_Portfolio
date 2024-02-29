@@ -72,7 +72,7 @@ const Skills: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="">
+        <div className="pt-10">
           <Experience />
         </div>
       </div>

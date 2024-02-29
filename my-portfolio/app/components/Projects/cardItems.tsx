@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CardItemProps } from "@/types/cards";
 
-const CardsItemTwo: React.FC<CardItemProps> = ({
+const CardsItems: React.FC<CardItemProps> = ({
   cardImageSrc,
   cardTitle,
   cardContent,
@@ -14,13 +14,18 @@ const CardsItemTwo: React.FC<CardItemProps> = ({
   };
 
   return (
-    <div className="border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark w-full sm:w-1/2 lg:w-2/3">
-        <div className="w-full h-full relative">
+    <div className="border border-stroke bg-white p-2 shadow-default dark:border-strokedark dark:bg-boxdark w-full sm:w-1/2 lg:w-2/3 mb-4">
+        <div className="w-full h-48 relative overflow-hidden">
           {cardImageSrc ? (
-            <Image width={300} height={128} src={cardImageSrc} alt="Cards" />
+            <Image 
+              layout="fill"
+              objectFit="cover"
+              src={cardImageSrc} 
+              alt="Cards" 
+            />
           ) : null}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 ease-in-out bg-black bg-opacity-50 text-white">
-          <p className="font-bold p-3">{cardContent}</p>
+            <p className="font-bold p-3">{cardContent}</p>
           </div>
         </div>
       <div className="p-2">
@@ -37,7 +42,7 @@ const CardsItemTwo: React.FC<CardItemProps> = ({
                     src={iconSrc}
                     width={50}
                     height={50}
-                    alt="Brand"
+                    alt="project"
                   />
                 ))}
               </div>
@@ -58,4 +63,4 @@ const CardsItemTwo: React.FC<CardItemProps> = ({
   );
 };
 
-export default CardsItemTwo;
+export default CardsItems;
